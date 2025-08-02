@@ -1,4 +1,4 @@
-# 🧠 SmartQuiz App
+# 🧠 QUIZVIA Frontend App
 
 A Basic Front-end interactive Quiz Application Project made with **HTML**, **CSS** & **Javascript**.
 
