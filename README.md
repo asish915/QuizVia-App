@@ -1,4 +1,4 @@
-# 🧠 QUIZVIA Frontend App
+# 🧠 QUIZVIA Front-end App
 
 A Basic Front-end interactive Quiz Application Project made with **HTML**, **CSS** & **Javascript**.
 
