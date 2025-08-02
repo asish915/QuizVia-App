@@ -1,0 +1,99 @@
+:root {
+  --bg-color: #f5f5dc;
+  --primary: #007BFF;
+  --success: #28a745;
+  --error: #dc3545;
+  --text: #333;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.logo-header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10000; 
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.hide {
+  display: none;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn.correct {
+  background-color: var(--success);
+}
+
+.btn.wrong {
+  background-color: var(--error);
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.rules {
+  margin: 20px 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

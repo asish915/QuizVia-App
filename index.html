@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizVia Application</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+    <!-- Logo Header -->
+  <header class="logo-header">
+    <img src="logo.png" alt="QuizVia Logo" class="logo-img" />
+  </header>
+
+  <div id="intro-screen" class="screen">
+    <h1>Hii!!...Welcome to QuizVia</h1>
+    <p id="typing-text"></p>
+    <div class="rules">
+      <h2>Rules:</h2>
+      <ul>
+        <li>Each question has only one correct answer.</li>
+        <li>Click the answer to select it.</li>
+        <li>Use the "Next" button to proceed to the next question.</li>
+        <li>Answer all questions to complete the quiz.</li>
+        <li>You wll get instant feedback after every question.</li>
+        <li>Try to score as high as possible!</li>
+        <li>Good luck and have fun!</li>
+      </ul>
+    </div>
+    <button id="start-btn" class="btn">Let's Start</button>
+  </div>
+
+  <div id="quiz-screen" class="screen hide">
+    <div class="quiz-header">
+      <div id="question-number"></div>
+      <div id="score-display">Score: 0</div>
+    </div>
+    <div id="question-container">
+      <div id="question"></div>
+      <div id="answer-buttons" class="btn-grid"></div>
+    </div>
+    <div class="controls">
+      <button id="next-btn" class="btn hide">Next</button>
+    </div>
+  </div>
+
+  <div id="result-screen" class="screen hide">
+    <h2>Quiz Completed!</h2>
+    <h1>Thank You!!</h1>
+    <p id="final-score"></p>
+    <button onclick="location.reload()" class="btn">Restart Quiz</button>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
